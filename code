@@ -1,0 +1,10 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="127.0.0.1",
+  user="root",
+  passwd="your_sql_password",
+  database = "sql_store",
+  auth_plugin='mysql_native_password')
+  
+mycursor = mydb.cursor()
